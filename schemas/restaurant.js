@@ -47,10 +47,10 @@ export default defineType({
     },
     {
       name: 'type',
-      type: 'string',
-      title: 'reference',
+      type: 'reference',
+      title: 'Category',
       validation: (Rule) => Rule.required(),
-      to: [{type: 'category/'}],
+      to: [{type: 'category'}],
     },
     {
       name: 'dishes',
